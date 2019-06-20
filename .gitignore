@@ -4,3 +4,5 @@ c_src/*.o
 doc
 ebin
 priv
+_build/
+c_src/*.d
