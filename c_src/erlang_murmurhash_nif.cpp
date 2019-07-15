@@ -151,7 +151,7 @@ erlang_murmurhash64a_2_impl(ErlNifEnv* env, int, const ERL_NIF_TERM argv[])
 {
     ErlNifBinary  bin;
     unsigned long h;
-    unsigned long seed;
+    ErlNifUInt64 seed;
 
     if (!check_and_unpack_data(env, argv[0], &bin)) {
         return enif_make_badarg(env);
@@ -186,7 +186,7 @@ erlang_murmurhash64b_2_impl(ErlNifEnv* env, int, const ERL_NIF_TERM argv[])
 {
     ErlNifBinary  bin;
     unsigned long h;
-    unsigned long seed;
+    ErlNifUInt64 seed;
 
     if (!check_and_unpack_data(env, argv[0], &bin)) {
         return enif_make_badarg(env);
