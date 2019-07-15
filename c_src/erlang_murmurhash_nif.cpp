@@ -1,4 +1,5 @@
 #include <erl_nif.h>
+#include <string.h>
 #include "MurmurHash2.h"
 #include "MurmurHash3.h"
 
